@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment page</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Payment Details</h2>
+            <form id="payment-form">
+              <div class="form-field">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+              </div>
+              <div class="form-field">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+              </div>
+              <div class="form-field">
+                <label for="cvc">CVC / CVV</label>
+                <input type="text" id="cvc" name="cvc" required>
+              </div>
+              <div class="form-field">
+                <label for="name-on-card">Name on Card</label>
+                <input type="text" id="name-on-card" name="name-on-card" required>
+              </div>
+              <div class="button-container">
+                <button id="pay-button" disabled>Pay</button>
+              </div>
+            </form>
+        </div>
+        <div class="summary">
+            <h2>Summary</h2>
+        <!-- Table to display the summary from local storage -->
+      <div id="summary-table"></div>
+      </div>
+      
+    </div>
+  
+
+
+  <script src="payment.js"></script>
+</body>
+</html>
